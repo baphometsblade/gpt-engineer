@@ -1,0 +1,11 @@
+terrible_teddies/
+    game/
+        __init__.py
+        card.py
+        game_board.py
+        player.py
+        rulebook.py
+        soundtrack.py
+        token.py
+    main.py
+    requirements.txt

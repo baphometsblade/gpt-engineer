@@ -1,0 +1,16 @@
+build = "npm run build"
+test = "npm run test"
+lint = "quick-lint-js"
+
+[paths]
+base = "./frontend"  # base directory to operate in (for monorepos)
+src = "./src"        # source directory (under the base directory) from which context will be retrieved
+
+[gptengineer-app]  # this namespace is used for gptengineer.app, may be used for internal experiments
+project_id = "..."
+
+# we support multiple OpenAPI schemas, used as context for the LLM
+openapi = [
+    { url = "OPENAI_ENDPOINT=https://api.perplexity.ai/v2/assistants" },
+    { url = "https://api.openai.com/v1/images/generations" },
+]
